@@ -91,8 +91,8 @@ resource	grain,	294,	233
 resource	grain,	297,	237
 
 ;Andorhal_Province
-resource	grain,	295,	226
-resource	grain,	291,	229
+resource	grain,	296,	228
+resource	grain,	290,	228
 
 ;Stratholme_Province
 resource	wine,	304,	244
@@ -150,6 +150,9 @@ resource	grain,	288,	213
 ;Stromgarde_Province
 resource	iron,	312,	201
 
+;Thoradin_Province
+resource	iron,	307,	206
+
 ;Hamerfall_Province
 resource	wool,	311,	207
 
@@ -195,7 +198,7 @@ resource	slaves,	272,	111
 
 ;Blackrock_Spire_Province
 resource	slaves,	284,	111
-resource	silver,	290,	115
+resource	silver,	285,	113
 
 ;Thaurissan_Province
 resource	iron,	296,	111
@@ -1107,7 +1110,7 @@ unit		Axe Militia					exp 0 armour 0 weapon_lvl 0
 unit		Bow Militia					exp 0 armour 0 weapon_lvl 0
 
 ; Inside Andorhal
-character	Taelan Fordring, named character, male, age 25, x 296, y 228, portrait taelan, battle_model Silver_Hand 
+character	Taelan Fordring, named character, male, age 25, x 292, y 228, portrait taelan, battle_model Silver_Hand 
 traits Generous 1 , CrusaderHistory 1 , BattleChivalry 1 , GoodAdministrator 2 , LoyaltyStarter 1 
 army
 unit		Knights Bodyguard			exp 3 armour 0 weapon_lvl 0
@@ -1774,7 +1777,7 @@ unit		Sword and Board Infantry	exp 0 armour 0 weapon_lvl 0
 unit		human spear militia			exp 0 armour 1 weapon_lvl 0
 unit		Sword and Board Archers		exp 0 armour 0 weapon_lvl 0
 
-character	Galen Trollbane, named character, male, heir, age 24, x 305, y 206, portrait galen 
+character	Galen Trollbane, named character, male, heir, age 24, x 301, y 206, portrait galen 
 traits FactionHeir 1, Generous 1 , BattleChivalry 1 , LoyaltyStarter 1 
 army
 unit		Red Legion Equestrian		exp 3 armour 0 weapon_lvl 0
@@ -2091,7 +2094,7 @@ settlement castle
 	}
 	building
 	{
-		type hinterland_castle_roads c_roads
+		type hinterland_castle_roads c_paved_roads
 	}
 	building
 	{
@@ -2264,6 +2267,10 @@ settlement
 	population 		247
 	plan_set default_set
 	faction_creator scourge
+	building
+	{
+		type hinterland_castle_roads c_roads
+	}
 }
 
 ; Inside Icecrown
@@ -3238,7 +3245,7 @@ settlement
 	faction_creator goblin
 }
 
-character	Rend Blackhand, named character, male, leader, age 31, x 286, y 119, portrait rend, battle_model blackhand 
+character	Rend Blackhand, named character, male, leader, age 31, x 285, y 119, portrait rend, battle_model blackhand 
 traits Factionleader 1 , GoodCommander 3 , Energetic 2 , GoodAttacker 2 , Drink 1 , Bloodthirsty 2 , ReligionStarter 1 
 army
 unit		Drake Riders				exp 5 armour 1 weapon_lvl 0
@@ -4521,6 +4528,10 @@ settlement
 	population 		246
 	plan_set default_set
 	faction_creator saxons
+	building
+	{
+		type hinterland_roads roads
+	}
 }
 
 character	Zuljin, named character, male, leader, age 38, x 325, y 242, portrait zuljin 
@@ -4558,7 +4569,7 @@ unit		Smolderthorne Headhunters	exp 0 armour 0 weapon_lvl 0
 unit		Smolderthorne Headhunters	exp 0 armour 0 weapon_lvl 0
 unit		Smolderthorne Flamecaller	exp 0 armour 0 weapon_lvl 0
 
-character	Threshjin, named character, male, age 21, x 311, y 242, portrait threshjin 
+character	Threshjin, named character, male, age 21, x 310, y 243, portrait threshjin 
 traits GoodCommander 3 , Energetic 2 , Intelligent 1 , Drink 1 , Bloodthirsty 2 
 army
 unit		Lynx Warriors				exp 3 armour 0 weapon_lvl 0
@@ -4969,6 +4980,10 @@ settlement
 	}
 	building
 	{
+		type hinterland_roads paved_roads
+	}
+	building
+	{
 		type barracks_dwarf town_guard_dwarf
 	}
 	building
@@ -5274,6 +5289,10 @@ settlement
 	{
 		type core_building wooden_wall
 	}
+	building
+	{
+		type hinterland_roads roads
+	}
 }
 
 settlement castle
@@ -5289,6 +5308,10 @@ settlement castle
 	building
 	{
 		type core_castle_building castle
+	}
+	building
+	{
+		type hinterland_roads roads
 	}
 }
 
@@ -5306,6 +5329,10 @@ settlement castle
 	{
 		type core_castle_building castle
 	}
+	building
+	{
+		type hinterland_roads roads
+	}
 }
 
 character	Dagran Thaurissan, named character, male, leader, age 43, x 304, y 112, portrait dagran 
@@ -5316,7 +5343,7 @@ unit		Anvilrage Warrior			exp 0 armour 0 weapon_lvl 0
 unit		Anvilrage Sunderers			exp 0 armour 0 weapon_lvl 0
 unit		Ironstar Marksmen			exp 0 armour 0 weapon_lvl 0
 
-character	Valgrum Angerforge, named character, male, age 40, x 291, y 131, portrait angerforge 
+character	Valgrum Angerforge, named character, male, age 40, x 292, y 129, portrait angerforge 
 traits GoodCommander 2 , Energetic 2 , Intelligent 1 , Drink 1 , Bloodthirsty 2 , ReligionStarter 1 
 army
 unit		Doomforge Pulverizer Bodyguard	exp 3 armour 0 weapon_lvl 0
@@ -8246,6 +8273,7 @@ farming_level 0
 famine_threat 0
 
 watchtower 268 245
+watchtower 282 238
 
 region Fenris_Province
 
@@ -8270,15 +8298,13 @@ region Durnhold_Province
 farming_level 0
 famine_threat 0
 
-watchtower 305 210
-watchtower 300 206
+watchtower 304 212
+watchtower 297 207
 
 region Hearthglen_Province
 
 farming_level 0
 famine_threat 0
-
-watchtower 282 238
 
 region Andorhal_Province
 
